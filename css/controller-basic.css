@@ -1,0 +1,165 @@
+html{
+	overflow: hidden;
+}
+body{
+	display: flex;
+	flex-flow: column;
+	min-height: 100vh;
+	height: 46rem;
+}
+.head{
+    width: 100%;
+	height: 3rem;
+	color: #272a2e;
+	font-weight: bolder;
+	background-color: #30d276;
+	flex: 1;
+}
+.body{
+	position: relative;
+	width: 100%;
+	height: 40rem;
+	flex: 1;
+	background-color: #ffffff;
+}
+.main-content{
+	position: relative;
+	margin: 0 auto;
+	width: 85%;
+	height: 100%;
+	/* background-color: rgb(206, 201, 201); */
+	/* margin: auto 0; */
+	/* background-color: darkgray; */
+}
+/* #main-content > div{
+	position: relative;
+	float: left;
+} */
+#myiframe{
+	width: 100%;
+	height: 100%;
+	margin-top: 20px;
+}
+#usertable{
+	margin-left: 30px;
+	margin-top: 3rem;
+	left: -30px;
+}
+
+.banner{
+	position: relative;
+	width: 15%;
+	height: 100%;
+	color: darkslategrey;
+	float: left;
+	background-color: #80ce48;
+	text-align: center;
+	/* border: 2px #e2e2e2 solid; */
+} 
+.foot{
+	/* position: absolute;
+	bottom: 0; */
+	width: 100%;
+	height: 3rem;
+	background-color:  #80ce48;
+	flex: 1;
+}
+
+#userTable{
+	display: block;
+	margin: auto 0;
+}
+#pagejump{    
+	position: absolute;
+    margin: 0 auto;
+    left: 40%;
+    bottom: 0;
+}
+/* 角色 */
+#set{
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	margin-top: 10rem;
+	text-align: center;
+	border-radius: 3px;
+	background-color: #80ce48;
+	border: 1px solid skyblue;
+}
+h1{
+	color: navy;
+	text-align: center;
+}
+.set-userName{
+	width: 170px;
+	height: 30px;
+	margin-top: 10px;
+}
+.box1, .box2{
+	width: 170px;
+	height: 30;
+	margin-top: 10px; 
+	float: left;
+}
+.smallbox{
+	width: 170px;
+	height: 30px;
+}
+#storge{
+	margin-top: 10px;
+}
+li dd{
+	color: rgb(197, 177, 61);
+	background-color:#337e25;
+}
+/* li{
+	background-color: #82d447; 
+} */
+
+/* 通知 */
+.line{
+	width: 90%;
+	margin-left: 50px;
+	padding-top: 70px;
+}
+a{
+	cursor: pointer;
+}
+a:hover{
+	color: black
+}
+.informdelete{
+	position: relative;
+	float: right;
+}
+#send-inform{
+	position: absolute;
+	width: 80%;
+	height: 200px; 
+	padding-top: 30px;
+	padding-right: 30px;
+	margin-top: 10rem;
+	margin-left: 10%;
+	background-color: #82d447;
+	border: 1px solid grey;
+	border-radius: 5px;
+}
+
+/* 课件上传 */
+.border{
+	width: 100%;
+	height: 100%;
+}
+#video{
+	margin: 0 auto;
+}
+.layui-nav-tree{
+	width: 100%;
+}
+
+.newAdd{
+	width: 100%;
+	position: absolute;
+	margin-top: 45px;
+	left: 0px;
+}

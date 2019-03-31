@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+}
+body {
+    /* color: #333; */
+    width: 100%;
+    height: 1000px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.block1{
+    position: relative;
+    width: 100%;
+    height: 6%;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+h1{
+    width: 100%;
+    height: 100%;
+    color: grey;
+    text-align: center;
+    line-height: 250%;
+}
+.block2{
+    position: relative;
+    width: 100%;
+    height: 94%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ffffff;
+}
+.word{
+    width: 100%;
+    height: 20%;
+}
+h2{
+    text-align: center;
+    color: grey;
+    width: 100%;
+    height: 100%;
+    line-height: 800%;
+}
+.row{
+    width: 100%;
+    height: 60%;
+    /* background-color: #333; */
+}
+.android{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    background-color:#ffffff;
+}
+a{
+    text-align: center;
+}
+img{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.ios{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    background-color:#ffffff;
+}
+.scar{
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    background-color: #ffffff;
+}
+.row span{
+    color: #ffffff;
+    background-color: #86ca86;
+}
+P{
+    color: grey;
+}
+
+.outer div{
+    margin: 0 auto;
+    text-align: center;
+}
+.outer p{
+    color: #6fdc33;
+}
