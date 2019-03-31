@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>明医教育-超级管理员系统</title>
+  <link rel="shortcut icon" href="../image/Collection (2).ico">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="../layui-v2.2.6/layui/css/layui.css"  media="all">
+  <link rel="stylesheet" href="../css/controller-basic.css"  media="all">
+</head>
+<body>
+  <div class="head">
+    <h2 style="line-height: 3rem; margin-left: 2%;"><i class="layui-icon" style="color: #fff682;font-size: 25px;">&#xe68e;</i> 明医教育</h2>
+  </div>
+  <div class="body">
+    <div class="banner">
+        <ul class="layui-nav layui-nav-tree layui-inline" lay-filter="demo" style="margin-right: -5spx;">
+            <li class="layui-nav-item layui-nav-itemed"> 
+              <a href="javascript:;" style="font-size: 1.15em; color: #272a2e;"><i class="layui-icon" style="color: #fff682;font-size: 18px;">&#xe65e;</i> 财务管理</a>
+              <dl class="layui-nav-child">
+                <dd><a href="input.html" target="box" class="jumping" style="color: rgb(197, 177, 61);font-size: 1.15em;">收入</a></dd>
+                <dd><a href="output.html" target="box" class="jumping" style="color: rgb(197, 177, 61);font-size: 1.15em;">支出情况</a></dd>
+                <dd><a href="submit-output.html" target="box" class="jumping" style="color: rgb(197, 177, 61);font-size: 1.15em;">新增支出</a></dd>
+              </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;" style="font-size: 1.15em;color: #272a2e;"><i class="layui-icon" style="color: #fff682;font-size: 18px;">&#xe66f;</i> 用户管理</a>
+                <dl class="layui-nav-child">
+                  <dd><a href="user-list.html" target="box" class="jumping" style="color: rgb(197, 177, 61);font-size: 1.15em;">普通用户</a></dd>
+                  <dd><a href="controller-list.html" target="box" class="jumping" style="color: rgb(197, 177, 61);font-size: 1.15em;">普通管理员</a></dd>
+                  <dd><a href="set-role.html" target="box" class="jumping" style="color: rgb(197, 177, 61);font-size: 1.15em;">角色设置</a></dd>
+                </dl>
+              </li>
+            <li class="layui-nav-item">
+              <a href="javascript:;" style="font-size: 1.15em;color: #272a2e;"><i class="layui-icon" style="color: #fff682;font-size: 18px;">&#xe638;</i> 通知管理</a>
+              <dl class="layui-nav-child">
+                <dd><a href="infrom-list.html" target="box" class="jumping" style="color: rgb(197, 177, 61);font-size: 1.15em;" id="inform-list">过往通知</a></dd>
+                <dd><a href="inform.html" target="box" class="jumping" style="color: rgb(197, 177, 61);font-size: 1.15em;">发布通知</a></dd>
+              </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;" style="font-size: 1.15em;color: #272a2e;"><i class="layui-icon" style="color: #fff682;font-size: 18px;">&#xe6ed;</i> 点播视频管理</a>
+                <dl class="layui-nav-child">
+                  <dd><a href="" target="box" class="jumping" style="color: rgb(197, 177, 61);font-size: 1.15em;">直播</a></dd>
+                  <dd><a href="" target="box" class="jumping" style="color: rgb(197, 177, 61);font-size: 1.15em;">远程会诊</a></dd>
+              </dl>
+            </li>
+            <li class="layui-nav-item">
+              <a href="javascript:;" style="font-size: 1.15em;color: #272a2e;"><i class="layui-icon" style="color: #fff682;font-size: 18px;">&#xe6ed;</i> 课件管理</a>
+              <dl class="layui-nav-child">
+                <dd><a href="course.html" target="box" class="jumping" style="color: rgb(197, 177, 61);font-size: 1.15em;">已上传课件</a></dd>
+                <dd><a href="../updata-video/VOD_H5_UploadDemo-master/WebContent/index.html" target="box" class="jumping" style="color: rgb(197, 177, 61);font-size: 1.15em;">新增课件</a></dd>
+            </dl>
+          </li>
+            <!-- <li class="layui-nav-item"><a href="course.html" target="box" class="jumping" style="font-size: 1.15em;color: #272a2e;"><i class="layui-icon" style="color: #fff682;font-size: 18px;">&#xe656;</i> 课件管理</a></li> -->
+            <li class="layui-nav-item"><a href="check.html" target="box" class="jumping" style="font-size: 1.15em;color: #272a2e;"><i class="layui-icon" style="color: #fff682;font-size: 18px;">&#xe672;</i> 审核管理</a></li>
+          </ul>
+        </div>
+    <div class="main-content">
+        <iframe src="input.html" id="myiframe" width="100%" height="95%" name="box" frameborder="0"></iframe>
+    </div>
+  </div>
+  <div class="foot"></div>
+          
+<script src="../js/jquery-3.3.1.js" charset="utf-8"></script>
+<script src="../layui-v2.2.6/layui/layui.js" charset="utf-8"></script>
+<script src="../js/common-controller.js"></script>
+<script src="../js/login.js"></script>
+<script>
+  layui.use('element', function(){
+  var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+  
+  //监听导航点击
+  element.on('nav(demo)', function(elem){
+    //console.log(elem)
+    // layer.msg(elem.text());
+  });
+});
+</script>
+</body>
+</html>  

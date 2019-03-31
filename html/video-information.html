@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>视频信息上传</title>
+  <link rel="stylesheet" href="../layui-v2.2.6/layui/css/layui.css"  media="all">
+  <link rel="stylesheet" href="../css/controller-basic.css"  media="all">
+  <link rel="stylesheet" href="../css/common-controller.css"  media="all">
+</head>
+<body>
+        <form class="layui-form" action="" lay-filter="example">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">视频费用</label>
+                    <div class="layui-input-inline">
+                        <input id="vfee" name="username" class="layui-input" type="text" placeholder="免费请输入0" autocomplete="off" lay-verify="required">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                  <label class="layui-form-label">是否推广</label>
+                  <div class="layui-input-block">
+                    <input name="yn" title="是" type="radio" checked="" value="是">
+                    <input name="yn" title="否" type="radio" value="否">
+                  </div>
+                </div>
+                <div class="layui-form-item layui-form-text">
+                  <label class="layui-form-label">视频简介</label>
+                  <div class="layui-input-block">
+                    <textarea id="vintro" name="desc" class="layui-textarea" placeholder="请输入内容"></textarea>
+                  </div>
+                </div>
+        </form>      
+	<script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
+	<script src="../js/carhartl-jquery-cookie-92b7715/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>	
+    <script>
+        form.val('example', {
+    "username": "贤心" // "name": "value"
+    ,"interest": 1
+    ,"like[write]": true //复选框选中状态
+    ,"close": true //开关状态
+    ,"yn": "是"
+    ,"desc": "视频简介"
+  })
+var vTitle = $("#vtitle").val();
+var vFee = $("#vfee").val();
+var vIntro = $("#vintro").val();
+
+
+
+
+
+
+
+</script>		
+</body>
+</html>

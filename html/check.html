@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>支出列表</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="../layui-v2.2.6/layui/css/layui.css"  media="all">
+  <link rel="stylesheet" href="../css/controller-basic.css"  media="all">
+</head>
+<body>
+  <div>
+        <table class="layui-table" lay-filter="EditListTable" id="usertable">
+            <thead>
+            <tr>
+             <th lay-data="{field:'id', width:50, sort: true}">序号</th>
+             <th lay-data="{field:'name', width:80, sort: true}">姓名</th>
+             <th lay-data="{field:'weixinId', width:80, sort: true}">用户名</th>
+             <th lay-data="{field:'weixinId', width:80, sort: true}">微信</th>
+             <th lay-data="{field:'weixinId', width:80, sort: true}">付费老师课程金额</th>
+             <th lay-data="{field:'weixinId', width:80, sort: true}">支付类型</th>
+             <th lay-data="{field:'weixinId', width:80, sort: true}">银行名称</th>
+             <th lay-data="{field:'weixinId', width:80, sort: true}">银行账号</th>
+             <th lay-data="{field:'weixinId', width:80, sort: true}">提交人员</th>
+             <th lay-data="{field:'weixinId', width:80, sort: true}">提交时间</th>
+             <th lay-data="{field:'weixinId', width:80, sort: true}">金额</th>
+             <th lay-data="{field:'weixinId', width:80, sort: true}">确认</th>
+             <!-- <th lay-data="{field:'weixinId', width:150, sort: true}"></th> -->
+            </tr>
+            </thead>
+            <tbody id="userRow"></tbody>
+        </table>
+        </div>
+        <div id="pagejump">
+            <button class="layui-btn layui-btn-primary layui-btn-sm" id="prev">上一页</button>
+            <button class="layui-btn layui-btn-primary layui-btn-sm" id="next">下一页</button>
+        </div>
+        <!-- <div id="divide-page"></div>        -->
+<script src="../js/jquery-3.3.1.js" charset="utf-8"></script>
+<script src="../layui-v2.2.6/layui/layui.js" charset="utf-8"></script>
+<script src="../js/check.js" charset="utf-8"></script>
+<script>
+
+</script>
+</body>
+</html>      
+        

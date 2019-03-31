@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html style="overflow: hidden;">
+<head>
+  <meta charset="utf-8">
+  <title>管理员列表</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="../layui-v2.2.6/layui/css/layui.css"  media="all">
+  <link rel="stylesheet" href="../css/controller-basic.css"  media="all">
+</head>
+<body>
+  <div id="set" class="layui-bg-gray" style="border:1px solid #c2c2c2; border-radius: 3px;">
+    <form>
+			<h3>用户角色设置</h3>
+			<input type="text" class="set-userName" placeholder="请输入用户ID"/>
+			<div class="smallbox">
+				<div class="box1">
+					<input type="radio" class="set-normal" id="r1" name="rd" value="normal"/>
+					<label for="r1">普通用户</label>
+				</div>
+				<div class="box2">
+					<input type="radio" class="set-manager" id="r2" name="rd" value="manager"/>
+					<label for="r2">管理员</label>
+				</div>
+			</div>
+			<button class="layui-btn layui-btn-normal" id="storge">保存</button>
+		</form>
+  </div>
+<script src="../js/jquery-3.3.1.js" charset="utf-8"></script>
+<script src="../layui-v2.2.6/layui/layui.js" charset="utf-8"></script>
+<script src="../js/common-controller.js" charset="utf-8"></script>
+</body>
+</html>      
+        
