@@ -1,0 +1,71 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+    width: 100%;
+    height: 600px;
+	background: url(../image/login-background.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position:top center;
+	background-attachment: fixed;
+	overflow-y: hidden;
+}
+.login{
+	width: 400px;
+	height: 430px;
+	border-radius: 5px;
+	padding-top:50px;
+	background:whitesmoke;
+	margin:0 auto;
+	margin-top: 100px;
+	box-shadow: darkgrey 10px 10px 30px 5px ;
+}
+.login h1{
+	color:grey;
+	text-align: center;
+	margin-top: 20px;
+}
+/* form{
+	height: 50em;
+	width: 100%;
+} */
+.userName,.userPsd{
+	display: block;
+	border:1px solid #fff;
+	width: 350px;
+	height: 45px; 
+	margin:0 auto;
+	margin-top: 40px;
+	padding-left: 10px;
+	border-radius: 5px;
+	border:1px solid gray;
+	font-size: large;
+}
+#btn{
+	display: block;
+	height: 45px;
+	width: 360px;
+	margin:0 auto;
+	margin-top: 40px;
+	border: none;
+	background-color: turquoise;
+	color: white;
+	font-size: larger;
+	border-radius: 5px;
+	cursor: pointer; 
+}
+#btn:active{
+	background: turquoise;
+	opacity:0.5;
+}
+/* .register{
+	font-size: large;
+	color:grey;
+	margin-left: 25px;
+}
+.register a{
+	color :turquoise;
+	text-decoration: none;
+} */
